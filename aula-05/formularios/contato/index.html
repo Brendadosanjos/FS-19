@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+</head>
+
+<body>
+  <h1>Formulário de contato</h1>
+  <hr>
+  <br>
+
+  <form action="https://api-send-email-m9xz.onrender.com/gildembergleite@gmail.com" method="post">
+    <div>
+      <label for="name">Nome</label> <br>
+      <input type="text" name="name" id="name" placeholder="Insira seu nome completo">
+    </div>
+    <br>
+    <div>
+      <label for="email">Email</label> <br>
+      <input type="email" name="email" id="email">
+    </div>
+    <br>
+    <div>
+      <fieldset>
+        <legend>Assunto</legend>
+        <input type="radio" name="subject" id="sugestao" value="Sugestão">
+        <label for="sugestao">Sugestão</label>
+
+        <br>
+
+        <input type="radio" name="subject" id="contato" value="Contato">
+        <label for="contato">Contato</label>
+
+        <br>
+
+        <input type="radio" name="subject" id="outros" value="Outros">
+        <label for="outros">Outros</label>
+      </fieldset>
+    </div>
+    <br>
+    <div>
+      <label for="message">Mensagem</label> <br>
+      <textarea name="message" id="message" cols="40" rows="10"></textarea>
+    </div>
+    <br>
+    <div>
+      <button>Enviar</button>
+    </div>
+  </form>
+</body>
+
+</html>

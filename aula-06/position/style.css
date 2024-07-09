@@ -1,0 +1,87 @@
+section {
+  position: relative;
+  background-color: darkcyan;
+  height: 450px;
+}
+
+.box {
+  width: 120px;
+  height: 120px;
+}
+
+.red {
+  background-color: darkred;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 4;
+}
+
+.blue {
+  background-color: darkblue;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  z-index: 3;
+}
+
+.yellow {
+  background-color: darkgoldenrod;
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  z-index: 2;
+}
+
+.green {
+  background-color: darkgreen;
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  z-index: 1;
+}
+
+.pink {
+  background-color: pink;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+
+.gray {
+  background-color: darkgray;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 4;
+}
+
+.magenta {
+  background-color: darkmagenta;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  z-index: 3;
+}
+
+.white {
+  background-color: white;
+  position: absolute;
+  bottom: 60px;
+  right: 60px;
+  z-index: 2;
+}
+
+.purple {
+  background-color: darkslateblue;
+  position: absolute;
+  bottom: 80px;
+  right: 80px;
+  z-index: 1;
+}
+
+
+
+
+
+
