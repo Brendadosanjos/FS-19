@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: rgb(0, 0, 0);
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(41, 41, 41);
+    color: white;
+}
+header h5 {
+    margin-left: 80px;
+}
+header ul {
+    color: white;
+    margin-right: 80px;
+}
+.menu {
+    display: flex;
+    color: white;
+}
+
+.menu li {
+    margin-left: 10px;
+    position: relative;
+    font-size: .9rem;
+    color: white;
+}
+
+.menu li:hover {
+    transform: scale(1.1);
+}
+
+/* sobre mim */
+
+.sobremim {
+    color: black;
+    padding: 20px;
+}
+
+.sobremim img {
+    width: 5px;
+}
