@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+      <div class="bg-gray-900 text-white flex justify-between pl-24 pr-10 items-center">
+        <a class="text-xl" href="#">Meu Portfolio</a>
+        <div >
+          <ul class="flex p-4 space-x-3">
+            <li>
+              <a href="#about">Sobre</a>
+            </li>
+            <li>
+              <a class="text-gray-400" href="#projects">Projetos</a>
+            </li>
+            <li>
+              <a class="text-gray-400 href="#contact">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+    <!-- Seção Sobre -->
+    <section class="flex justify-between ml-20 mr-20 mt-5 p-5 items-center">
+          <div>
+            <h2 class="text-4xl font-medium">Sobre Mim</h2><br>
+            <p>
+              Olá! Eu sou um desenvolvedor web com paixão por criar soluções inovadoras...
+            </p>
+            <br>
+            <div>
+              <button class="bg-blue-600 text-white p-2 rounded-lg hover:bg-blue-700">Linkedin</button>
+              <button class="bg-blue-600 text-white p-2 rounded-lg hover:bg-blue-700">Instagram</button>
+              <button class="bg-blue-600 text-white p-2 rounded-lg hover:bg-blue-700">Github</button>
+            </div>
+          </div>
+          <div class="bg-[url('https://github.com/gildembergleite.png')] size-72 rounded-full bg-center bg-cover mr-6"></div>             
+        </div>
+    </section>
+  
+    <!-- Seção Projetos -->
+    <div class="ml-20 mr-20 mt-5 p-5">
+        <h2 class="text-4xl font-medium text-center pb-5">Meus Projetos</h2>
+
+        <div class="grid grid-cols-3 g-3 ">
+            <div class="w-90 border-2 border-zinc-300">
+              <img src="https://img.odcdn.com.br/wp-content/uploads/2023/08/web-crawler-1024x576.jpg" alt="Projeto 1">
+                <div class="py-4 px-2 space-y-2">
+                    <h5 class="text-xl font-semibold">Projeto</h5>
+                    <p>Descrição breve do projeto 1...</p>
+                </div>
+            </div>
+            <div class="w-90 border-2 border-zinc-300">
+                <img src="https://img.odcdn.com.br/wp-content/uploads/2023/08/web-crawler-1024x576.jpg" alt="Projeto 1">
+                  <div class="py-4 px-2 space-y-2">
+                      <h5 class="text-xl font-semibold">Projeto</h5>
+                      <p>Descrição breve do projeto 1...</p>
+                  </div>
+              </div>
+              <div class="w-90 border-2 border-zinc-300">
+                <img src="https://img.odcdn.com.br/wp-content/uploads/2023/08/web-crawler-1024x576.jpg" alt="Projeto 1">
+                  <div class="py-4 px-2 space-y-2">
+                      <h5 class="text-xl font-semibold">Projeto</h5>
+                      <p>Descrição breve do projeto 1...</p>
+                  </div>
+              </div>
+              <div class="w-90 border-2 border-zinc-300">
+                <img src="https://img.odcdn.com.br/wp-content/uploads/2023/08/web-crawler-1024x576.jpg" alt="Projeto 1">
+                  <div class="py-4 px-2 space-y-2">
+                      <h5 class="text-xl font-semibold">Projeto</h5>
+                      <p>Descrição breve do projeto 1...</p>
+                  </div>
+              </div>
+              <div class="w-90 border-2 border-zinc-300">
+                <img src="https://img.odcdn.com.br/wp-content/uploads/2023/08/web-crawler-1024x576.jpg" alt="Projeto 1">
+                  <div class="py-4 px-2 space-y-2">
+                      <h5 class="text-xl font-semibold">Projeto</h5>
+                      <p>Descrição breve do projeto 1...</p>
+                  </div>
+              </div>
+              <div class="w-90 border-2 border-zinc-300">
+                <img src="https://img.odcdn.com.br/wp-content/uploads/2023/08/web-crawler-1024x576.jpg" alt="Projeto 1">
+                  <div class="py-4 px-2 space-y-2">
+                      <h5 class="text-xl font-semibold">Projeto</h5>
+                      <p>Descrição breve do projeto 1...</p>
+                  </div>
+              </div>
+    </div>
+    <br>
+    <!-- Seção Contato -->
+    <section id="contact">
+      <div>
+        <h2 class="text-4xl font-medium text-center pb-5 ">Contato</h2>
+        <form>
+          <div>
+            <label for="name">Nome</label><br>
+            <input class="border-2 border-zinc-300 w-full" type="text" id="name" required>
+          </div>
+          <div>
+            <label for="email">Email</label><br>
+            <input class="border-2 border-zinc-300 w-full" type="email" id="email" required>
+          </div>
+          <div>
+            <label for="message">Mensagem</label><br>
+            <textarea class="border-2 border-zinc-300 w-full" id="message" rows="4" required></textarea>
+          </div>
+          <button class="bg-blue-600 text-white p-1.5 rounded-lg hover:bg-blue-700" type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+    <br>
+    </div>
+    <!-- Rodapé -->
+    <footer class=" bg-gray-900 text-white text-center p-6">
+      <p>&copy; 2024 Meu Portfolio. Todos os direitos reservados.</p>
+    </footer>
+  
+  </body>
