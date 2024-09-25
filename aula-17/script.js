@@ -120,9 +120,6 @@ atualizarUsuario(2, { nome: "Leticia Oliveira", idade: 15, cidade: "Barreirinha"
 // Imprimindo o array atualizado
 console.log(usuarios);
 
-
-
-
 const excluirUsuario = (id) => {
     const indice = usuarios.findIndex((usuario) => usuario.id === id);
     if (indice !== -1) {
