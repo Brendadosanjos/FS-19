@@ -9,11 +9,11 @@ let produtos = [
       categoria: "gastronomia",
     },
     { id: 5, nome: "Bola de Futebol", preco: "60.00", categoria: "esporte" },
-];
+  ];
   
-const nome = document.getElementById("nome");
-const preco = document.getElementById("preco");
-const categoria = document.getElementById("categoria");
+  const nome = document.getElementById("nome");
+  const preco = document.getElementById("preco");
+  const categoria = document.getElementById("categoria");
   
   const listaProdutos = document.getElementById("lista-produtos");
   
@@ -61,7 +61,7 @@ const categoria = document.getElementById("categoria");
               <button onclick="deletarProduto(${produto.id})">Remover</button>
             </td>
             <td>
-              <button onclick="atualizarProduto(${produto.id})">Atualizar</button>
+              <button onclick="abrirModal(${produto.id})">Editar</button>
             </td>
           </tr>
       `;
@@ -73,13 +73,14 @@ const categoria = document.getElementById("categoria");
   function abrirModal(id) {
     modal.classList.remove("hidden");
     modal.classList.add("flex");
-  }
-
-  function fercharModal(id) {
-    modal.classList.remove("hidden");
-    modal.classList.add("flex");
-  }
-
-
   
-
+    const produto = produtos.find((produto) => produto.id === id);
+  
+    nomeAtualizado.value = produto.nome;
+  }
+  
+  function fecharModal() {
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+  }
+  
