@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 19</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <div
+      class="relative w-full min-h-screen flex flex-col justify-start items-center px-12"
+    >
+      <button onclick="abrirModal()">Modal</button>
+      <h2 class="text-3xl font-medium mt-12 mb-6">Cadastro de Produtos</h2>
+      <form class="flex w-full border rounded-lg p-4 gap-4">
+        <div class="flex flex-col gap-2 w-full">
+          <label for="nome">
+            Nome
+            <sup class="text-red-500">*</sup>
+          </label>
+
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            required
+            class="w-full border rounded-md h-10 px-2"
+          />
+        </div>
+        <div class="flex flex-col gap-2 w-full">
+          <label for="preco">
+            Preço
+            <sup class="text-red-500">*</sup>
+          </label>
+
+          <input
+            type="text"
+            name="preco"
+            id="preco"
+            required
+            class="w-full border rounded-md h-10 px-2"
+          />
+        </div>
+        <div class="flex flex-col gap-2 w-full">
+          <label for="categoria">
+            Categoria
+            <sup class="text-red-500">*</sup>
+          </label>
+
+          <select
+            name="categoria"
+            id="categoria"
+            class="w-full border rounded-md h-10 px-2"
+          >
+            <option value="tecnologia">Tecnologia</option>
+            <option value="saude" selected>Saúde</option>
+            <option value="arte">Arte</option>
+            <option value="gastronomia">Gastronomia</option>
+            <option value="esporte">Esporte</option>
+          </select>
+        </div>
+        <div class="flex flex-grow items-end">
+          <button
+            type="button"
+            onclick="cadastrarProduto()"
+            class="px-4 h-10 bg-sky-500 text-white rounded-md mt-2"
+          >
+            Cadastrar
+          </button>
+        </div>
+      </form>
+
+      <h2 class="text-3xl font-medium my-6">Lista de Produtos</h2>
+      <table class="w-full">
+        <thead>
+          <tr class="border-b">
+            <th class="text-left">Nome</th>
+            <th class="text-left">Preço</th>
+            <th class="text-left">Categoria</th>
+          </tr>
+        </thead>
+        <tbody id="lista-produtos" class="divide-y"></tbody>
+      </table>
+
+      <div
+        id="modal"
+        class="hidden absolute h-screen w-screen bg-black/40 justify-center items-center"
+      >
+        <div class="bg-white p-6 w-full max-w-lg rounded-md">
+          <h2 class="text-3xl font-medium mb-6">Atualizar Produto</h2>
+          <form class="w-full space-y-4">
+            <div class="flex flex-col gap-2 w-full">
+              <label for="nome">
+                Nome
+                <sup class="text-red-500">*</sup>
+              </label>
+
+              <input
+                type="text"
+                name="nome"
+                id="nome-atualizado"
+                required
+                class="w-full border rounded-md h-10 px-2"
+              />
+            </div>
+            <div class="flex flex-col gap-2 w-full">
+              <label for="preco">
+                Preço
+                <sup class="text-red-500">*</sup>
+              </label>
+
+              <input
+                type="text"
+                name="preco"
+                id="preco-atualizado"
+                required
+                class="w-full border rounded-md h-10 px-2"
+              />
+            </div>
+            <div class="flex flex-col gap-2 w-full">
+              <label for="categoria">
+                Categoria
+                <sup class="text-red-500">*</sup>
+              </label>
+
+              <select
+                name="categoria"
+                id="categoria-atualizada"
+                class="w-full border rounded-md h-10 px-2"
+              >
+                <option value="tecnologia">Tecnologia</option>
+                <option value="saude" selected>Saúde</option>
+                <option value="arte">Arte</option>
+                <option value="gastronomia">Gastronomia</option>
+                <option value="esporte">Esporte</option>
+              </select>
+            </div>
+            <div class="w-full items-end">
+              <button
+                type="button"
+                onclick="atualizarProduto()"
+                class="w-full px-4 h-10 bg-sky-500 text-white rounded-md mt-2"
+              >
+                Atualizar
+              </button>
+              <button
+              type="button"
+              onclick="fecharModal()"
+              class="w-full px-4 h-10 bg-sky-500 text-white rounded-md mt-2"
+            >
+              Fechar Modal
+            </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
