@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aula 19</title>
+    <title>Aula 20</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
@@ -11,7 +11,6 @@
     <div
       class="relative w-full min-h-screen flex flex-col justify-start items-center px-12"
     >
-      <button onclick="abrirModal()">Modal</button>
       <h2 class="text-3xl font-medium mt-12 mb-6">Cadastro de Produtos</h2>
       <form class="flex w-full border rounded-lg p-4 gap-4">
         <div class="flex flex-col gap-2 w-full">
@@ -53,8 +52,9 @@
             id="categoria"
             class="w-full border rounded-md h-10 px-2"
           >
+            <option value="" disabled selected>Selecione um produto</option>
             <option value="tecnologia">Tecnologia</option>
-            <option value="saude" selected>Saúde</option>
+            <option value="saude">Saúde</option>
             <option value="arte">Arte</option>
             <option value="gastronomia">Gastronomia</option>
             <option value="esporte">Esporte</option>
@@ -63,7 +63,7 @@
         <div class="flex flex-grow items-end">
           <button
             type="button"
-            onclick="cadastrarProduto()"
+            onclick="postProduct()"
             class="px-4 h-10 bg-sky-500 text-white rounded-md mt-2"
           >
             Cadastrar
