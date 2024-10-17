@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "name": "Mouse",
+      "price": 129.9,
+      "category": "Tecnologia",
+      "id": "5e1f"
+    },
+    {
+      "name": "Teclado",
+      "price": 260.9,
+      "category": "Tecnologia",
+      "id": "1784"
+    },
+    {
+      "id": "7704",
+      "name": "Notebook",
+      "price": "4000",
+      "category": "tecnologia"
+    }
+  ]
+}
