@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aula 21</title>
-    <link rel="stylesheet" href="output.css">
+    <title>Aula 20</title>
+    <link rel="stylesheet" href="output.css" />
   </head>
 
   <body>
@@ -53,11 +53,11 @@
             class="w-full border rounded-md h-10 px-2"
           >
             <option value="" disabled selected>Selecione um produto</option>
-            <option value="tecnologia">Tecnologia</option>
-            <option value="saude">Saúde</option>
-            <option value="arte">Arte</option>
-            <option value="gastronomia">Gastronomia</option>
-            <option value="esporte">Esporte</option>
+            <option value="Tecnologia">Tecnologia</option>
+            <option value="Saúde">Saúde</option>
+            <option value="Arte">Arte</option>
+            <option value="Gastronomia">Gastronomia</option>
+            <option value="Esporte">Esporte</option>
           </select>
         </div>
         <div class="flex flex-grow items-end">
@@ -129,20 +129,28 @@
                 id="categoria-atualizada"
                 class="w-full border rounded-md h-10 px-2"
               >
-                <option value="tecnologia">Tecnologia</option>
-                <option value="saude" selected>Saúde</option>
-                <option value="arte">Arte</option>
-                <option value="gastronomia">Gastronomia</option>
-                <option value="esporte">Esporte</option>
+                <option value="Tecnologia">Tecnologia</option>
+                <option value="Saúde" selected>Saúde</option>
+                <option value="Arte">Arte</option>
+                <option value="Gastronomia">Gastronomia</option>
+                <option value="Esporte">Esporte</option>
               </select>
             </div>
             <div class="w-full items-end">
               <button
+                id="patch-button"
+                onclick="patchProduct()"
                 type="button"
-                onclick="atualizarProduto()"
                 class="w-full px-4 h-10 bg-sky-500 text-white rounded-md mt-2"
               >
                 Atualizar
+              </button>
+              <button
+                type="button"
+                onclick="fecharModal()"
+                class="w-full px-4 h-10 bg-red-600 text-white rounded-md mt-2"
+              >
+                Fechar
               </button>
             </div>
           </form>

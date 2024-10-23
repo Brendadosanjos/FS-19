@@ -157,3 +157,4 @@ function listarProdutos(produtos) {
     `;
   });
 }
+//o ? significa que o código só tentará executar o método forEach se produtos não for null ou undefined. Se produtos for null ou undefined, a execução simplesmente pulará essa parte do código, evitando um erro que seria lançado se você tentasse chamar forEach diretamente em um valor null ou undefined.
