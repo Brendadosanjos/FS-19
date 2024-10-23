@@ -10,7 +10,7 @@ let produtos = [
   },
   { id: 5, nome: "Bola de Futebol", preco: "60.00", categoria: "esporte" },
 ];
-
+const id = document.getElementById("id");
 const nome = document.getElementById("nome");
 const preco = document.getElementById("preco");
 const categoria = document.getElementById("categoria");
