@@ -1,11 +1,11 @@
 const API_BASE_URL = 'http://localhost:3333'
 // const API_BASE_URL = 'https://services-products.p7fvz0.easypanel.host/api'
 
-async function getProducts() {
+async function getProducts() { //o async obriga o js esperar
   try {
-    const response = await fetch(`${API_BASE_URL}/products`)
-    // const { results: data } = await response.json()
-    const data = await response.json()
+    const response = await fetch(`${API_BASE_URL}/products`)//produts são definidos no package.json. FETCH é uma api que me retorna a resposta de uma requisição 
+    // const { results: data } = await response.json() // usado só quando o json está já pronto
+    const data = await response.json()//response dá informações sobre a reposta do backend. com o json ele transforma a resposta em objeto
     listarProdutos(data)
   } catch (error) {
     console.error(error.message)
@@ -14,7 +14,7 @@ async function getProducts() {
 
 getProducts()
 
-async function postProduct() {
+async function postProduct() { //criação de produto
   const name = document.getElementById('nome')
   const price = document.getElementById('preco')
   const category = document.getElementById('categoria')
@@ -25,13 +25,13 @@ async function postProduct() {
     category: category.value
   }
 
-  try {
+  try { //sempre assim para não quebrar o código
     await fetch(`${API_BASE_URL}/products`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(product)
+      body: JSON.stringify(product) //transforma um json em uma string
     })
   } catch (error) {
     console.error(error.message)
