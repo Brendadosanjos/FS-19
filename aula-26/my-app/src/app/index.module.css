@@ -1,0 +1,44 @@
+.divPrincipal {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.Header {
+    background-color: #4f5052;
+    color: #fafafa;
+    text-align: center;
+    padding: 20px;
+}
+
+.Main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+}
+
+.divInput {
+    display: flex;
+    gap: 10px;
+}
+
+.addButton {
+    padding: 5px 10px;
+}
+
+.List {
+    min-width: 40%;
+    background-color: #5c5c5e;
+}
+
+.Footer {
+    color: #fafafa;
+    background-color: #4f5052;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
